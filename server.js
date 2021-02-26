@@ -13,6 +13,12 @@ app.get("/greet", (req, res) => {
   res.send(`Hello, ${name}!`);
 });
 
+app.get("/hi", (req, res) => {
+  const name = req.query.name;
+
+  res.send(`Hi, ${name}!`);
+});
+
 const port = 3000;
 app.listen(port, () => {
   console.log(`Running on http://localhost:${port}`);
