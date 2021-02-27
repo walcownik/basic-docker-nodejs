@@ -14,7 +14,7 @@ app.get("/greet", (req, res) => {
 });
 
 app.get("/version", (req, res) => {
-  res.send('6');
+  res.send('7');
 });
 
 const port = 3000;
